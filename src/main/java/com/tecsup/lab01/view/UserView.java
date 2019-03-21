@@ -1,12 +1,12 @@
 package com.tecsup.lab01.view;
 
-import javax.swing.JOptionPane;
+import com.tecsup.lab01.controller.UserController;
 
-public class UserView extends UserController
+public class UserView
 {
     public static void main( String[] args )
     {
-    	String vari = "Nombre:"+nombre+"\nApellidos"+Apellido+"\nEdad:"+edad;
-        System.out.println(vari);
+    	UserController x=new UserController();
+    	System.out.println(x.obtenernombre());
     }
 }
